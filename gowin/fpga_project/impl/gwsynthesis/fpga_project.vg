@@ -1,0 +1,514 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Thu Jul  2 19:10:07 2026
+
+//Source file index table:
+//file0 "\D:/code/verilog/uart/gowin/fpga_project/src/baud_rate_gen.v"
+//file1 "\D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v"
+//file2 "\D:/code/verilog/uart/gowin/fpga_project/src/uart_tx.v"
+`timescale 100 ps/100 ps
+module baud_rate_gen (
+  clk_d,
+  rst_btn_d,
+  n38_6,
+  tx_acc_0,
+  tx_acc_1,
+  tx_acc_3,
+  tx_acc_5,
+  tx_acc_6,
+  tx_acc_7
+)
+;
+input clk_d;
+input rst_btn_d;
+output n38_6;
+output tx_acc_0;
+output tx_acc_1;
+output tx_acc_3;
+output tx_acc_5;
+output tx_acc_6;
+output tx_acc_7;
+wire n38_4;
+wire n46_7;
+wire n45_7;
+wire n44_7;
+wire n43_7;
+wire n42_7;
+wire n41_7;
+wire n40_5;
+wire n47_9;
+wire n38_5;
+wire n44_8;
+wire n43_8;
+wire n41_8;
+wire [4:2] tx_acc_2;
+wire VCC;
+wire GND;
+  LUT4 n38_s0 (
+    .F(n38_4),
+    .I0(tx_acc_1),
+    .I1(n47_9),
+    .I2(n38_5),
+    .I3(n38_6) 
+);
+defparam n38_s0.INIT=16'h1000;
+  LUT3 n46_s3 (
+    .F(n46_7),
+    .I0(tx_acc_0),
+    .I1(tx_acc_1),
+    .I2(rst_btn_d) 
+);
+defparam n46_s3.INIT=8'h60;
+  LUT4 n45_s3 (
+    .F(n45_7),
+    .I0(tx_acc_0),
+    .I1(tx_acc_1),
+    .I2(tx_acc_2[2]),
+    .I3(rst_btn_d) 
+);
+defparam n45_s3.INIT=16'h7800;
+  LUT3 n44_s3 (
+    .F(n44_7),
+    .I0(n44_8),
+    .I1(tx_acc_3),
+    .I2(rst_btn_d) 
+);
+defparam n44_s3.INIT=8'h60;
+  LUT3 n43_s3 (
+    .F(n43_7),
+    .I0(tx_acc_2[4]),
+    .I1(n43_8),
+    .I2(rst_btn_d) 
+);
+defparam n43_s3.INIT=8'h60;
+  LUT4 n42_s3 (
+    .F(n42_7),
+    .I0(tx_acc_2[4]),
+    .I1(n43_8),
+    .I2(tx_acc_5),
+    .I3(rst_btn_d) 
+);
+defparam n42_s3.INIT=16'h7800;
+  LUT3 n41_s3 (
+    .F(n41_7),
+    .I0(tx_acc_6),
+    .I1(n41_8),
+    .I2(rst_btn_d) 
+);
+defparam n41_s3.INIT=8'h60;
+  LUT4 n40_s2 (
+    .F(n40_5),
+    .I0(tx_acc_6),
+    .I1(n41_8),
+    .I2(tx_acc_7),
+    .I3(rst_btn_d) 
+);
+defparam n40_s2.INIT=16'h7800;
+  LUT2 n47_s4 (
+    .F(n47_9),
+    .I0(tx_acc_0),
+    .I1(rst_btn_d) 
+);
+defparam n47_s4.INIT=4'h7;
+  LUT4 n38_s1 (
+    .F(n38_5),
+    .I0(tx_acc_3),
+    .I1(tx_acc_5),
+    .I2(tx_acc_6),
+    .I3(tx_acc_7) 
+);
+defparam n38_s1.INIT=16'h8000;
+  LUT2 n38_s2 (
+    .F(n38_6),
+    .I0(tx_acc_2[2]),
+    .I1(tx_acc_2[4]) 
+);
+defparam n38_s2.INIT=4'h1;
+  LUT3 n44_s4 (
+    .F(n44_8),
+    .I0(tx_acc_0),
+    .I1(tx_acc_1),
+    .I2(tx_acc_2[2]) 
+);
+defparam n44_s4.INIT=8'h80;
+  LUT4 n43_s4 (
+    .F(n43_8),
+    .I0(tx_acc_0),
+    .I1(tx_acc_1),
+    .I2(tx_acc_2[2]),
+    .I3(tx_acc_3) 
+);
+defparam n43_s4.INIT=16'h8000;
+  LUT3 n41_s4 (
+    .F(n41_8),
+    .I0(tx_acc_2[4]),
+    .I1(tx_acc_5),
+    .I2(n43_8) 
+);
+defparam n41_s4.INIT=8'h80;
+  DFFR tx_acc_7_s0 (
+    .Q(tx_acc_7),
+    .D(n40_5),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_7_s0.INIT=1'b0;
+  DFFR tx_acc_6_s0 (
+    .Q(tx_acc_6),
+    .D(n41_7),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_6_s0.INIT=1'b0;
+  DFFR tx_acc_5_s0 (
+    .Q(tx_acc_5),
+    .D(n42_7),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_5_s0.INIT=1'b0;
+  DFFR tx_acc_4_s0 (
+    .Q(tx_acc_2[4]),
+    .D(n43_7),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_4_s0.INIT=1'b0;
+  DFFR tx_acc_3_s0 (
+    .Q(tx_acc_3),
+    .D(n44_7),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_3_s0.INIT=1'b0;
+  DFFR tx_acc_2_s0 (
+    .Q(tx_acc_2[2]),
+    .D(n45_7),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_2_s0.INIT=1'b0;
+  DFFR tx_acc_1_s0 (
+    .Q(tx_acc_1),
+    .D(n46_7),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_1_s0.INIT=1'b0;
+  DFFR tx_acc_0_s0 (
+    .Q(tx_acc_0),
+    .D(n47_9),
+    .CLK(clk_d),
+    .RESET(n38_4) 
+);
+defparam tx_acc_0_s0.INIT=1'b0;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* baud_rate_gen */
+module transmitter (
+  clk_d,
+  n28_8,
+  n38_6,
+  wr_en,
+  tx_acc_0,
+  tx_acc_1,
+  tx_acc_3,
+  tx_acc_5,
+  tx_acc_6,
+  tx_acc_7,
+  uart_tx_d,
+  state
+)
+;
+input clk_d;
+input n28_8;
+input n38_6;
+input wr_en;
+input tx_acc_0;
+input tx_acc_1;
+input tx_acc_3;
+input tx_acc_5;
+input tx_acc_6;
+input tx_acc_7;
+output uart_tx_d;
+output [1:0] state;
+wire n45_14;
+wire bitpos_2_8;
+wire n49_13;
+wire n48_12;
+wire n47_12;
+wire n36_5;
+wire n44_18;
+wire bitpos_2_9;
+wire bitpos_2_10;
+wire n46_16;
+wire n44_19;
+wire bitpos_2_11;
+wire tx_7;
+wire data_7_8;
+wire n46_24;
+wire [6:6] data;
+wire [2:0] bitpos;
+wire VCC;
+wire GND;
+  LUT2 n45_s6 (
+    .F(n45_14),
+    .I0(state[0]),
+    .I1(state[1]) 
+);
+defparam n45_s6.INIT=4'h6;
+  LUT4 bitpos_2_s3 (
+    .F(bitpos_2_8),
+    .I0(state[0]),
+    .I1(bitpos_2_9),
+    .I2(bitpos_2_10),
+    .I3(data_7_8) 
+);
+defparam bitpos_2_s3.INIT=16'hFF40;
+  LUT2 n49_s7 (
+    .F(n49_13),
+    .I0(bitpos[0]),
+    .I1(state[1]) 
+);
+defparam n49_s7.INIT=4'h4;
+  LUT3 n48_s6 (
+    .F(n48_12),
+    .I0(bitpos[0]),
+    .I1(bitpos[1]),
+    .I2(state[1]) 
+);
+defparam n48_s6.INIT=8'h60;
+  LUT4 n47_s6 (
+    .F(n47_12),
+    .I0(bitpos[0]),
+    .I1(bitpos[1]),
+    .I2(bitpos[2]),
+    .I3(state[1]) 
+);
+defparam n47_s6.INIT=16'h7800;
+  LUT4 n36_s1 (
+    .F(n36_5),
+    .I0(state[0]),
+    .I1(n46_16),
+    .I2(bitpos_2_10),
+    .I3(data_7_8) 
+);
+defparam n36_s1.INIT=16'hFFE0;
+  LUT3 n44_s10 (
+    .F(n44_18),
+    .I0(n44_19),
+    .I1(state[0]),
+    .I2(state[1]) 
+);
+defparam n44_s10.INIT=8'hE3;
+  LUT4 bitpos_2_s4 (
+    .F(bitpos_2_9),
+    .I0(bitpos[1]),
+    .I1(bitpos[2]),
+    .I2(bitpos[0]),
+    .I3(state[1]) 
+);
+defparam bitpos_2_s4.INIT=16'h7F00;
+  LUT4 bitpos_2_s5 (
+    .F(bitpos_2_10),
+    .I0(tx_acc_0),
+    .I1(tx_acc_1),
+    .I2(bitpos_2_11),
+    .I3(n38_6) 
+);
+defparam bitpos_2_s5.INIT=16'h1000;
+  LUT4 n46_s9 (
+    .F(n46_16),
+    .I0(bitpos[0]),
+    .I1(bitpos[1]),
+    .I2(bitpos[2]),
+    .I3(state[1]) 
+);
+defparam n46_s9.INIT=16'h8000;
+  LUT4 n44_s11 (
+    .F(n44_19),
+    .I0(bitpos[0]),
+    .I1(bitpos[1]),
+    .I2(bitpos[2]),
+    .I3(data[6]) 
+);
+defparam n44_s11.INIT=16'h4100;
+  LUT4 bitpos_2_s6 (
+    .F(bitpos_2_11),
+    .I0(tx_acc_3),
+    .I1(tx_acc_5),
+    .I2(tx_acc_6),
+    .I3(tx_acc_7) 
+);
+defparam bitpos_2_s6.INIT=16'h0001;
+  LUT3 tx_s4 (
+    .F(tx_7),
+    .I0(state[0]),
+    .I1(state[1]),
+    .I2(bitpos_2_10) 
+);
+defparam tx_s4.INIT=8'hF1;
+  LUT3 data_7_s3 (
+    .F(data_7_8),
+    .I0(wr_en),
+    .I1(state[0]),
+    .I2(state[1]) 
+);
+defparam data_7_s3.INIT=8'h02;
+  LUT4 n46_s11 (
+    .F(n46_24),
+    .I0(n46_16),
+    .I1(data_7_8),
+    .I2(state[0]),
+    .I3(bitpos_2_10) 
+);
+defparam n46_s11.INIT=16'hCEFC;
+  DFFRE data_6_s0 (
+    .Q(data[6]),
+    .D(VCC),
+    .CLK(clk_d),
+    .CE(data_7_8),
+    .RESET(n28_8) 
+);
+defparam data_6_s0.INIT=1'b0;
+  DFFRE state_1_s1 (
+    .Q(state[1]),
+    .D(n45_14),
+    .CLK(clk_d),
+    .CE(n36_5),
+    .RESET(n28_8) 
+);
+defparam state_1_s1.INIT=1'b0;
+  DFFRE bitpos_2_s1 (
+    .Q(bitpos[2]),
+    .D(n47_12),
+    .CLK(clk_d),
+    .CE(bitpos_2_8),
+    .RESET(n28_8) 
+);
+defparam bitpos_2_s1.INIT=1'b0;
+  DFFRE bitpos_1_s1 (
+    .Q(bitpos[1]),
+    .D(n48_12),
+    .CLK(clk_d),
+    .CE(bitpos_2_8),
+    .RESET(n28_8) 
+);
+defparam bitpos_1_s1.INIT=1'b0;
+  DFFRE bitpos_0_s1 (
+    .Q(bitpos[0]),
+    .D(n49_13),
+    .CLK(clk_d),
+    .CE(bitpos_2_8),
+    .RESET(n28_8) 
+);
+defparam bitpos_0_s1.INIT=1'b0;
+  DFFSE tx_s1 (
+    .Q(uart_tx_d),
+    .D(n44_18),
+    .CLK(clk_d),
+    .CE(tx_7),
+    .SET(n28_8) 
+);
+  DFFR state_0_s2 (
+    .Q(state[0]),
+    .D(n46_24),
+    .CLK(clk_d),
+    .RESET(n28_8) 
+);
+defparam state_0_s2.INIT=1'b0;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* transmitter */
+module top (
+  clk,
+  rst_btn,
+  uart_tx
+)
+;
+input clk;
+input rst_btn;
+output uart_tx;
+wire clk_d;
+wire rst_btn_d;
+wire n28_7;
+wire wr_en;
+wire n28_8;
+wire n38_6;
+wire uart_tx_d;
+wire [7:0] tx_acc;
+wire [1:0] state;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF rst_btn_ibuf (
+    .O(rst_btn_d),
+    .I(rst_btn) 
+);
+  OBUF uart_tx_obuf (
+    .O(uart_tx),
+    .I(uart_tx_d) 
+);
+  LUT2 n28_s3 (
+    .F(n28_7),
+    .I0(state[0]),
+    .I1(state[1]) 
+);
+defparam n28_s3.INIT=4'h1;
+  DFFR wr_en_s0 (
+    .Q(wr_en),
+    .D(n28_7),
+    .CLK(clk_d),
+    .RESET(n28_8) 
+);
+  INV n28_s4 (
+    .O(n28_8),
+    .I(rst_btn_d) 
+);
+  baud_rate_gen baud_gen (
+    .clk_d(clk_d),
+    .rst_btn_d(rst_btn_d),
+    .n38_6(n38_6),
+    .tx_acc_0(tx_acc[0]),
+    .tx_acc_1(tx_acc[1]),
+    .tx_acc_3(tx_acc[3]),
+    .tx_acc_5(tx_acc[5]),
+    .tx_acc_6(tx_acc[6]),
+    .tx_acc_7(tx_acc[7])
+);
+  transmitter tx (
+    .clk_d(clk_d),
+    .n28_8(n28_8),
+    .n38_6(n38_6),
+    .wr_en(wr_en),
+    .tx_acc_0(tx_acc[0]),
+    .tx_acc_1(tx_acc[1]),
+    .tx_acc_3(tx_acc[3]),
+    .tx_acc_5(tx_acc[5]),
+    .tx_acc_6(tx_acc[6]),
+    .tx_acc_7(tx_acc[7]),
+    .uart_tx_d(uart_tx_d),
+    .state(state[1:0])
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* top */

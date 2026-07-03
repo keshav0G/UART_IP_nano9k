@@ -23,7 +23,7 @@ assign txclk_en = (tx_acc == 0);
 
 
 always @(posedge clk)begin
-     
+    
     if(rx_acc == RX_ACC_MAX -1)
     rx_acc <= 0;
     else 
@@ -31,7 +31,6 @@ always @(posedge clk)begin
 end
 
 always @(posedge clk)begin
-
     if(rst) tx_acc = 0; 
     if (tx_acc== TX_ACC_MAX -1) begin
         tx_acc <= 0;

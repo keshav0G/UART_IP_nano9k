@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v",
+    "InstLine" : 17,
+    "InstName" : "baud_gen",
+    "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/baud_rate_gen.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "baud_rate_gen"
+   },
+   {
+    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v",
+    "InstLine" : 29,
+    "InstName" : "tx",
+    "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_tx.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "transmitter"
+   }
+  ]
+ }
+]
