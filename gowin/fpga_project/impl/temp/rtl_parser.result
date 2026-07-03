@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v",
-    "InstLine" : 17,
+    "InstLine" : 46,
     "InstName" : "baud_gen",
     "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/baud_rate_gen.v",
     "ModuleLine" : 4,
@@ -17,7 +17,7 @@
    },
    {
     "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_top.v",
-    "InstLine" : 29,
+    "InstLine" : 58,
     "InstName" : "tx",
     "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_tx.v",
     "ModuleLine" : 3,

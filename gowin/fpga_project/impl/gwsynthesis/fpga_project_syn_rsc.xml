@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="1" Lut="2" T_Register="16(1)" T_Lut="31(2)">
+<Module name="top" Register="39" Lut="66" T_Register="61(39)" T_Lut="101(66)">
  <SubModule name="baud_gen" Register="8" Lut="14" T_Register="8(8)" T_Lut="14(14)"/>
- <SubModule name="tx" Register="7" Lut="15" T_Register="7(7)" T_Lut="15(15)"/>
+ <SubModule name="tx" Register="14" Lut="21" T_Register="14(14)" T_Lut="21(21)"/>
 </Module>

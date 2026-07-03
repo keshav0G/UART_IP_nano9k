@@ -7,7 +7,8 @@ module transmitter (
     input wire rst,
     input wire clken,
     output reg tx,
-    output wire tx_busy
+    output wire tx_busy,
+    output reg tx_done
 );
 
 // initial begin
@@ -25,11 +26,14 @@ reg[1:0] state = STATE_IDLE;
 
 always@(posedge clk)begin
 
+    tx_done <= 1'b0;
+
     if(rst)begin
         tx<= 1'b1;
         state<= STATE_IDLE;
         bitpos <= 3'd0;
         data <= 8'd0;
+        tx_done <= 1'b0;
     end else begin
 
     case(state)
@@ -69,6 +73,7 @@ always@(posedge clk)begin
         if(clken)begin
             tx <= 1'b1;
             state <= STATE_IDLE;
+            tx_done <= 1'b1;
     end
 end
     default : begin
