@@ -34,6 +34,7 @@ always #19 clk = ~clk;
 
  wire serial_line; // connects rx and tx
 //transmitter
+ wire tx_done;
     transmitter tx_inst(
         .clk(clk),
         .rst(rst),
@@ -41,7 +42,8 @@ always #19 clk = ~clk;
         .tx_data(tx_data),
         .wr_en(wr_en),
         .tx(serial_line),
-        .tx_busy(tx_busy)
+        .tx_busy(tx_busy),
+        .tx_done(tx_done)
     );
 
  wire [7:0] rx_data;

@@ -16,7 +16,7 @@ parameter RX_STATE_STOP = 2'b10 ;
 
 reg [1:0] state = RX_STATE_START;
 reg [3:0] sample = 0;
-reg [3:0] btipos = 0;
+reg [3:0] bitpos = 0;
 reg[7:0] scratch = 8'b0;
 
 always@(posedge clk_50m) begin

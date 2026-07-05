@@ -26,6 +26,7 @@ reg [2:0] bitpos;        // counts 0-7
 
 
 wire start_detect;
+reg rx_prev;  // falling edge detetction
 
 assign start_detect = rx_prev & ~rx_sync2;
 
@@ -35,7 +36,7 @@ always@(posedge clk) begin
     rx_sync2 <= rx_sync1; // form here on we'll refernce rx_sync2 everywhere instead of rx
 end
 
-reg rx_prev;  // falling edge detetction
+
 always @(posedge clk) begin
 
     if(rst)
@@ -53,6 +54,8 @@ always @(posedge clk) begin
         rx_valid<= 0;
         rx_data <= 0;
      end else begin
+
+        rx_valid <=0;
         case (state)
             S_IDLE:begin
                 sample_cnt<= 0;
