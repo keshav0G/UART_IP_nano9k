@@ -56,8 +56,9 @@ table.detail_table td.label { min-width: 100px; width: 8%;}
 <tr>
 <td class="label">Design File</td>
 <td>D:\code\verilog\uart\gowin\fpga_project\src\baud_rate_gen.v<br>
-D:\code\verilog\uart\gowin\fpga_project\src\uart_top.v<br>
 D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
+D:\code\verilog\uart\gowin\fpga_project\src\top_echo.v<br>
+D:\code\verilog\uart\gowin\fpga_project\src\uart_rx.v<br>
 </td>
 </tr>
 <tr>
@@ -82,7 +83,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Jul  3 15:05:49 2026
+<td>Mon Jul  6 18:43:42 2026
 </td>
 </tr>
 <tr>
@@ -98,11 +99,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.062s, Peak memory usage = 345.777MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.005s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 345.777MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 345.777MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.156s, Elapsed time = 0h 0m 0.295s, Peak memory usage = 345.777MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.052s, Peak memory usage = 345.777MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.009s, Peak memory usage = 345.777MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.212s, Peak memory usage = 328.273MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.019s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.009s, Peak memory usage = 328.273MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.011s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.005s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.002s, Peak memory usage = 328.273MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.01s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.234s, Elapsed time = 0h 0m 0.432s, Peak memory usage = 328.273MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.074s, Peak memory usage = 328.273MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.066s, Peak memory usage = 328.273MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 0.217s, Elapsed time = 0h 0m 0.435s, Peak memory usage = 345.777MB</td>
+<td>CPU time = 0h 0m 0.388s, Elapsed time = 0h 0m 0.857s, Peak memory usage = 328.273MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -114,15 +115,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label"><b>I/O Port </b></td>
-<td>3</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label"><b>I/O Buf </b></td>
-<td>3</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
-<td>2</td>
+<td>3</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
@@ -130,35 +131,47 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>61</td>
+<td>64</td>
 </tr>
 <tr>
-<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
 <td>2</td>
 </tr>
 <tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>1</td>
+</tr>
+<tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
-<td>13</td>
+<td>21</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
-<td>46</td>
+<td>31</td>
 </tr>
 <tr>
 <td class="label"><b>LUT </b></td>
-<td>99</td>
+<td>77</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>15</td>
+<td>11</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>30</td>
+<td>26</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>54</td>
+<td>40</td>
 </tr>
 <tr>
 <td class="label"><b>INV </b></td>
@@ -178,12 +191,12 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>101(101 LUT, 0 ALU) / 8640</td>
-<td>2%</td>
+<td>79(79 LUT, 0 ALU) / 8640</td>
+<td><1%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>61 / 6693</td>
+<td>64 / 6693</td>
 <td><1%</td>
 </tr>
 <tr>
@@ -193,7 +206,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>61 / 6693</td>
+<td>64 / 6693</td>
 <td><1%</td>
 </tr>
 <tr>
@@ -244,8 +257,8 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>1</td>
 <td>clk</td>
 <td>50.000(MHz)</td>
-<td>99.460(MHz)</td>
-<td>5</td>
+<td>123.436(MHz)</td>
+<td>3</td>
 <td>TOP</td>
 </tr>
 </table>
@@ -255,11 +268,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.946</td>
+<td>11.899</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.380</td>
+<td>8.427</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -267,11 +280,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>baud_gen/tx_acc_1_s0</td>
+<td>tx_inst/data_3_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>tx/bitpos_0_s3</td>
+<td>tx_inst/tx_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -313,7 +326,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -322,15 +335,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>baud_gen/tx_acc_1_s0/CLK</td>
+<td>tx_inst/data_3_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>5</td>
-<td>baud_gen/tx_acc_1_s0/Q</td>
+<td>1</td>
+<td>tx_inst/data_3_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -338,15 +351,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>tx/n47_s12/I1</td>
+<td>tx_inst/n21_s17/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
 <td>1.099</td>
 <td>tINS</td>
 <td>FF</td>
-<td>5</td>
-<td>tx/n47_s12/F</td>
+<td>1</td>
+<td>tx_inst/n21_s17/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -354,55 +367,55 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>tx/n47_s9/I1</td>
+<td>tx_inst/n21_s14/I1</td>
 </tr>
 <tr>
-<td>5.302</td>
-<td>1.099</td>
+<td>4.352</td>
+<td>0.149</td>
 <td>tINS</td>
 <td>FF</td>
-<td>2</td>
-<td>tx/n47_s9/F</td>
+<td>1</td>
+<td>tx_inst/n21_s14/O</td>
 </tr>
 <tr>
-<td>6.262</td>
+<td>5.312</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>tx/bitpos_2_s4/I1</td>
+<td>tx_inst/n21_s13/I0</td>
 </tr>
 <tr>
-<td>7.361</td>
-<td>1.099</td>
+<td>5.475</td>
+<td>0.163</td>
 <td>tINS</td>
 <td>FF</td>
-<td>2</td>
-<td>tx/bitpos_2_s4/F</td>
+<td>1</td>
+<td>tx_inst/n21_s13/O</td>
 </tr>
 <tr>
-<td>8.321</td>
+<td>6.435</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>tx/n51_s9/I1</td>
+<td>tx_inst/n45_s10/I0</td>
 </tr>
 <tr>
-<td>9.420</td>
-<td>1.099</td>
+<td>7.467</td>
+<td>1.032</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>tx/n51_s9/F</td>
+<td>tx_inst/n45_s10/F</td>
 </tr>
 <tr>
-<td>10.380</td>
+<td>8.427</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>tx/bitpos_0_s3/D</td>
+<td>tx_inst/tx_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -436,7 +449,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -445,7 +458,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>tx/bitpos_0_s3/CLK</td>
+<td>tx_inst/tx_s1/CLK</td>
 </tr>
 <tr>
 <td>20.326</td>
@@ -453,7 +466,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>tx/bitpos_0_s3</td>
+<td>tx_inst/tx_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -468,12 +481,12 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>5</td>
+<td>3</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.396, 45.534%; route: 4.800, 49.719%; tC2Q: 0.458, 4.747%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.443, 31.722%; route: 4.800, 62.327%; tC2Q: 0.458, 5.951%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -483,11 +496,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.946</td>
+<td>12.005</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.380</td>
+<td>8.321</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -495,11 +508,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>delay_cnt_5_s0</td>
+<td>rx_inst/sample_cnt_1_s3</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>delay_cnt_19_s0</td>
+<td>rx_inst/bitpos_0_s3</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -541,7 +554,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -550,15 +563,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_5_s0/CLK</td>
+<td>rx_inst/sample_cnt_1_s3/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>3</td>
-<td>delay_cnt_5_s0/Q</td>
+<td>5</td>
+<td>rx_inst/sample_cnt_1_s3/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -566,7 +579,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n72_s4/I1</td>
+<td>rx_inst/n370_s3/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -574,7 +587,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tINS</td>
 <td>FF</td>
 <td>4</td>
-<td>n72_s4/F</td>
+<td>rx_inst/n370_s3/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -582,15 +595,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n63_s4/I1</td>
+<td>rx_inst/n370_s2/I1</td>
 </tr>
 <tr>
 <td>5.302</td>
 <td>1.099</td>
 <td>tINS</td>
 <td>FF</td>
-<td>8</td>
-<td>n63_s4/F</td>
+<td>12</td>
+<td>rx_inst/n370_s2/F</td>
 </tr>
 <tr>
 <td>6.262</td>
@@ -598,15 +611,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n59_s3/I1</td>
+<td>rx_inst/n187_s9/I1</td>
 </tr>
 <tr>
 <td>7.361</td>
 <td>1.099</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
-<td>n59_s3/F</td>
+<td>1</td>
+<td>rx_inst/n187_s9/F</td>
 </tr>
 <tr>
 <td>8.321</td>
@@ -614,23 +627,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n62_s2/I1</td>
-</tr>
-<tr>
-<td>9.420</td>
-<td>1.099</td>
-<td>tINS</td>
-<td>FF</td>
-<td>1</td>
-<td>n62_s2/F</td>
-</tr>
-<tr>
-<td>10.380</td>
-<td>0.960</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>delay_cnt_19_s0/D</td>
+<td>rx_inst/bitpos_0_s3/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -664,7 +661,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -673,7 +670,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_19_s0/CLK</td>
+<td>rx_inst/bitpos_0_s3/CLK</td>
 </tr>
 <tr>
 <td>20.326</td>
@@ -681,7 +678,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>delay_cnt_19_s0</td>
+<td>rx_inst/bitpos_0_s3</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -696,12 +693,12 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>5</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.396, 45.534%; route: 4.800, 49.719%; tC2Q: 0.458, 4.747%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.297, 43.408%; route: 3.840, 50.558%; tC2Q: 0.458, 6.034%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -711,11 +708,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.946</td>
+<td>12.072</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.380</td>
+<td>8.254</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -723,11 +720,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>delay_cnt_5_s0</td>
+<td>rx_inst/sample_cnt_1_s3</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>delay_cnt_23_s0</td>
+<td>rx_inst/state_0_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -769,7 +766,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -778,15 +775,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_5_s0/CLK</td>
+<td>rx_inst/sample_cnt_1_s3/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>3</td>
-<td>delay_cnt_5_s0/Q</td>
+<td>5</td>
+<td>rx_inst/sample_cnt_1_s3/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -794,7 +791,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n72_s4/I1</td>
+<td>rx_inst/n370_s3/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
@@ -802,7 +799,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tINS</td>
 <td>FF</td>
 <td>4</td>
-<td>n72_s4/F</td>
+<td>rx_inst/n370_s3/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -810,15 +807,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n63_s4/I1</td>
+<td>rx_inst/n190_s11/I1</td>
 </tr>
 <tr>
 <td>5.302</td>
 <td>1.099</td>
 <td>tINS</td>
 <td>FF</td>
-<td>8</td>
-<td>n63_s4/F</td>
+<td>1</td>
+<td>rx_inst/n190_s11/F</td>
 </tr>
 <tr>
 <td>6.262</td>
@@ -826,39 +823,23 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n58_s3/I1</td>
+<td>rx_inst/n190_s10/I0</td>
 </tr>
 <tr>
-<td>7.361</td>
-<td>1.099</td>
+<td>7.294</td>
+<td>1.032</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>n58_s3/F</td>
+<td>rx_inst/n190_s10/F</td>
 </tr>
 <tr>
-<td>8.321</td>
+<td>8.254</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n58_s2/I1</td>
-</tr>
-<tr>
-<td>9.420</td>
-<td>1.099</td>
-<td>tINS</td>
-<td>FF</td>
-<td>1</td>
-<td>n58_s2/F</td>
-</tr>
-<tr>
-<td>10.380</td>
-<td>0.960</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>delay_cnt_23_s0/D</td>
+<td>rx_inst/state_0_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -892,7 +873,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -901,7 +882,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_23_s0/CLK</td>
+<td>rx_inst/state_0_s0/CLK</td>
 </tr>
 <tr>
 <td>20.326</td>
@@ -909,7 +890,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>delay_cnt_23_s0</td>
+<td>rx_inst/state_0_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -924,12 +905,12 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>5</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.396, 45.534%; route: 4.800, 49.719%; tC2Q: 0.458, 4.747%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.230, 42.905%; route: 3.840, 51.007%; tC2Q: 0.458, 6.088%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -939,11 +920,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.946</td>
+<td>12.139</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.380</td>
+<td>8.187</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -951,11 +932,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>delay_cnt_5_s0</td>
+<td>baud_inst/tx_acc_1_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>delay_cnt_24_s0</td>
+<td>baud_inst/tx_acc_6_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -997,7 +978,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1006,15 +987,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_5_s0/CLK</td>
+<td>baud_inst/tx_acc_1_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>3</td>
-<td>delay_cnt_5_s0/Q</td>
+<td>6</td>
+<td>baud_inst/tx_acc_1_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -1022,15 +1003,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n72_s4/I1</td>
+<td>baud_inst/n43_s4/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
 <td>1.099</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
-<td>n72_s4/F</td>
+<td>3</td>
+<td>baud_inst/n43_s4/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -1038,55 +1019,39 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n63_s4/I1</td>
+<td>baud_inst/n41_s4/I0</td>
 </tr>
 <tr>
-<td>5.302</td>
-<td>1.099</td>
+<td>5.235</td>
+<td>1.032</td>
 <td>tINS</td>
 <td>FF</td>
-<td>8</td>
-<td>n63_s4/F</td>
+<td>2</td>
+<td>baud_inst/n41_s4/F</td>
 </tr>
 <tr>
-<td>6.262</td>
+<td>6.195</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n57_s3/I1</td>
+<td>baud_inst/n41_s3/I0</td>
 </tr>
 <tr>
-<td>7.361</td>
-<td>1.099</td>
+<td>7.227</td>
+<td>1.032</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>n57_s3/F</td>
+<td>baud_inst/n41_s3/F</td>
 </tr>
 <tr>
-<td>8.321</td>
+<td>8.187</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n57_s2/I1</td>
-</tr>
-<tr>
-<td>9.420</td>
-<td>1.099</td>
-<td>tINS</td>
-<td>FF</td>
-<td>1</td>
-<td>n57_s2/F</td>
-</tr>
-<tr>
-<td>10.380</td>
-<td>0.960</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>delay_cnt_24_s0/D</td>
+<td>baud_inst/tx_acc_6_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1120,7 +1085,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1129,7 +1094,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_24_s0/CLK</td>
+<td>baud_inst/tx_acc_6_s0/CLK</td>
 </tr>
 <tr>
 <td>20.326</td>
@@ -1137,7 +1102,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>delay_cnt_24_s0</td>
+<td>baud_inst/tx_acc_6_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1152,12 +1117,12 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>5</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.396, 45.534%; route: 4.800, 49.719%; tC2Q: 0.458, 4.747%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.163, 42.392%; route: 3.840, 51.465%; tC2Q: 0.458, 6.143%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>
@@ -1167,11 +1132,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>10.013</td>
+<td>12.139</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.313</td>
+<td>8.187</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -1179,11 +1144,11 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>delay_cnt_5_s0</td>
+<td>baud_inst/tx_acc_1_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>delay_cnt_12_s0</td>
+<td>baud_inst/tx_acc_7_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1225,7 +1190,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1234,15 +1199,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_5_s0/CLK</td>
+<td>baud_inst/tx_acc_1_s0/CLK</td>
 </tr>
 <tr>
 <td>1.184</td>
 <td>0.458</td>
 <td>tC2Q</td>
 <td>RF</td>
-<td>3</td>
-<td>delay_cnt_5_s0/Q</td>
+<td>6</td>
+<td>baud_inst/tx_acc_1_s0/Q</td>
 </tr>
 <tr>
 <td>2.144</td>
@@ -1250,15 +1215,15 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n72_s4/I1</td>
+<td>baud_inst/n43_s4/I1</td>
 </tr>
 <tr>
 <td>3.243</td>
 <td>1.099</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
-<td>n72_s4/F</td>
+<td>3</td>
+<td>baud_inst/n43_s4/F</td>
 </tr>
 <tr>
 <td>4.203</td>
@@ -1266,55 +1231,39 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n70_s3/I1</td>
+<td>baud_inst/n41_s4/I0</td>
 </tr>
 <tr>
-<td>5.302</td>
-<td>1.099</td>
+<td>5.235</td>
+<td>1.032</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
-<td>n70_s3/F</td>
+<td>2</td>
+<td>baud_inst/n41_s4/F</td>
 </tr>
 <tr>
-<td>6.262</td>
+<td>6.195</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n69_s3/I0</td>
+<td>baud_inst/n40_s2/I0</td>
 </tr>
 <tr>
-<td>7.294</td>
+<td>7.227</td>
 <td>1.032</td>
 <td>tINS</td>
 <td>FF</td>
 <td>1</td>
-<td>n69_s3/F</td>
+<td>baud_inst/n40_s2/F</td>
 </tr>
 <tr>
-<td>8.254</td>
+<td>8.187</td>
 <td>0.960</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>n69_s2/I1</td>
-</tr>
-<tr>
-<td>9.353</td>
-<td>1.099</td>
-<td>tINS</td>
-<td>FF</td>
-<td>1</td>
-<td>n69_s2/F</td>
-</tr>
-<tr>
-<td>10.313</td>
-<td>0.960</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>delay_cnt_12_s0/D</td>
+<td>baud_inst/tx_acc_7_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1348,7 +1297,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
-<td>61</td>
+<td>64</td>
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
@@ -1357,7 +1306,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>delay_cnt_12_s0/CLK</td>
+<td>baud_inst/tx_acc_7_s0/CLK</td>
 </tr>
 <tr>
 <td>20.326</td>
@@ -1365,7 +1314,7 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>delay_cnt_12_s0</td>
+<td>baud_inst/tx_acc_7_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1380,12 +1329,12 @@ D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>5</td>
+<td>4</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.329, 45.153%; route: 4.800, 50.066%; tC2Q: 0.458, 4.781%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.163, 42.392%; route: 3.840, 51.465%; tC2Q: 0.458, 6.143%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.726, 100.000%</td></tr>
 </table>

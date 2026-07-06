@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="39" Lut="66" T_Register="61(39)" T_Lut="101(66)">
- <SubModule name="baud_gen" Register="8" Lut="14" T_Register="8(8)" T_Lut="14(14)"/>
- <SubModule name="tx" Register="14" Lut="21" T_Register="14(14)" T_Lut="21(21)"/>
+<Module name="top" Register="9" Lut="2" T_Register="64(9)" T_Lut="79(2)">
+ <SubModule name="baud_inst" Register="12" Lut="19" T_Register="12(12)" T_Lut="19(19)"/>
+ <SubModule name="tx_inst" Register="14" Lut="20" T_Register="14(14)" T_Lut="20(20)"/>
+ <SubModule name="rx_inst" Register="29" Lut="38" T_Register="29(29)" T_Lut="38(38)"/>
 </Module>
