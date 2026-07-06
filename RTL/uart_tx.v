@@ -9,6 +9,8 @@ module transmitter (
     output reg tx,
     output wire tx_busy,
     output reg tx_done
+    //output reg tx_ready // handshake to counter race conditions
+
 );
 
 // initial begin
@@ -86,6 +88,6 @@ end
 end
 
 assign tx_busy = (state != STATE_IDLE);
-
+//assign tx_ready = (state == STATE_IDLE);
 
 endmodule

@@ -67,27 +67,24 @@ end
 
 //task to send one byte
 task send_byte;
-
 input [7:0] data;
-
 begin
 
-    // Wait until transmitter becomes idle
     while(tx_busy)
         @(posedge clk);
-
-    @(posedge clk);
 
     tx_data = data;
     wr_en   = 1'b1;
 
-    @(posedge clk);
+    // Wait until transmitter accepts it
+    while(!tx_busy)
+        @(posedge clk);
 
     wr_en = 1'b0;
 
 end
-
 endtask
+
 
     initial begin
     rst=1; 
@@ -101,22 +98,14 @@ endtask
         #200;
            send_byte(8'h55);
 
-    #10000;
-
+    //#10000;
     send_byte(8'hAA);
-
-    #10000;
-
+    //#10000;
     send_byte(8'h41);
-
-    #10000;
-
+    //#10000
     send_byte(8'h00);
-
-    #10000;
-
+    //#10000;
     send_byte(8'hFF);
-
     #50000;
 
     $finish;
