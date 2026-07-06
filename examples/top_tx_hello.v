@@ -1,3 +1,4 @@
+//transmits a hello message on the tx line, can be observed via putty
 module top (
     input clk,
     input rst_btn,
