@@ -18,7 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -67,7 +69,12 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	uint8_t msg[] = "PING\r\n";
+//	uint8_t msg[] = "PING\r\n";
+	char tx_buff[32];
+//	char rx_buff[16];
+
+
+	srand(HAL_GetTick());
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -98,7 +105,17 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_UART_Transmit(&huart1,msg,sizeof(msg)-1,HAL_MAX_DELAY);
+
+	  int num1 = 10;
+	  int num2 = 22;
+
+	  sprintf(tx_buff, "%d,%d\r\n", num1, num2);
+
+	  HAL_UART_Transmit(&huart1,
+	                    (uint8_t *)tx_buff,
+	                    strlen(tx_buff),
+	                    HAL_MAX_DELAY);
+//	  HAL_UART_Transmit(&huart1,msg,sizeof(msg)-1,HAL_MAX_DELAY);
 	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }

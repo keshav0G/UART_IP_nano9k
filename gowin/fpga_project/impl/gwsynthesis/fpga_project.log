@@ -1,17 +1,22 @@
 GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'D:\code\verilog\uart\gowin\fpga_project\src\baud_rate_gen.v'
-Analyzing Verilog file 'D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v'
-Analyzing Verilog file 'D:\code\verilog\uart\gowin\fpga_project\src\top_echo.v'
 Analyzing Verilog file 'D:\code\verilog\uart\gowin\fpga_project\src\uart_rx.v'
-Compiling module 'top'("D:\code\verilog\uart\gowin\fpga_project\src\top_echo.v":2)
+Analyzing Verilog file 'D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v'
+Analyzing Verilog file 'D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v'
+Compiling module 'top_add'("D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v":8)
 Compiling module 'baud_rate_gen'("D:\code\verilog\uart\gowin\fpga_project\src\baud_rate_gen.v":4)
 Compiling module 'transmitter'("D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v":3)
 WARN  (EX3858) : System task 'display' is ignored for synthesis("D:\code\verilog\uart\gowin\fpga_project\src\uart_tx.v":63)
 Compiling module 'receiver'("D:\code\verilog\uart\gowin\fpga_project\src\uart_rx.v":1)
 WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\code\verilog\uart\gowin\fpga_project\src\uart_rx.v":88)
 WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\code\verilog\uart\gowin\fpga_project\src\uart_rx.v":98)
-NOTE  (EX0101) : Current top module is "top"
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v":112)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v":125)
+WARN  (EX1998) : Net 'hundreds[7]' does not have a driver("D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v":86)
+WARN  (EX1998) : Net 'tens[7]' does not have a driver("D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v":87)
+WARN  (EX1998) : Net 'ones[7]' does not have a driver("D:\code\verilog\uart\gowin\fpga_project\src\top_stm_add.v":88)
+NOTE  (EX0101) : Current top module is "top_add"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed

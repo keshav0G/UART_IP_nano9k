@@ -84,7 +84,7 @@ end
         state <= STATE_IDLE;
     end
     endcase
-end
+end 
 end
 
 assign tx_busy = (state != STATE_IDLE);

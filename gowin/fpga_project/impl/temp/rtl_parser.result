@@ -1,31 +1,31 @@
 [
  {
-  "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_echo.v",
-  "InstLine" : 2,
-  "InstName" : "top",
-  "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_echo.v",
-  "ModuleLine" : 2,
-  "ModuleName" : "top",
+  "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_stm_add.v",
+  "InstLine" : 8,
+  "InstName" : "top_add",
+  "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_stm_add.v",
+  "ModuleLine" : 8,
+  "ModuleName" : "top_add",
   "SubInsts" : [
    {
-    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_echo.v",
-    "InstLine" : 19,
+    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_stm_add.v",
+    "InstLine" : 26,
     "InstName" : "baud_inst",
     "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/baud_rate_gen.v",
     "ModuleLine" : 4,
     "ModuleName" : "baud_rate_gen"
    },
    {
-    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_echo.v",
-    "InstLine" : 36,
+    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_stm_add.v",
+    "InstLine" : 45,
     "InstName" : "tx_inst",
     "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_tx.v",
     "ModuleLine" : 3,
     "ModuleName" : "transmitter"
    },
    {
-    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_echo.v",
-    "InstLine" : 54,
+    "InstFile" : "D:/code/verilog/uart/gowin/fpga_project/src/top_stm_add.v",
+    "InstLine" : 63,
     "InstName" : "rx_inst",
     "ModuleFile" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_rx.v",
     "ModuleLine" : 1,

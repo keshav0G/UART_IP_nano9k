@@ -6,15 +6,15 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_tx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/code/verilog/uart/gowin/fpga_project/src/top_echo.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/code/verilog/uart/gowin/fpga_project/src/uart_rx.v",
+   "Path" : "D:/code/verilog/uart/gowin/fpga_project/src/top_stm_add.v",
    "Type" : "verilog"
   }
  ],

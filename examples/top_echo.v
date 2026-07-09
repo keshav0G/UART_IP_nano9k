@@ -8,8 +8,8 @@ module top (
     
 wire rst = ~rst_btn;
 
-//baud generator instance
-wire txclk_en;
+//baud generat;or instance
+wire txclk_en
 wire rxclk_en;
 
 baud_rate_gen #(
