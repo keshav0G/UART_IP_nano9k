@@ -135,11 +135,11 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-	  int num1 = 10;
- 800017e:	230a      	movs	r3, #10
+	  int num1 = 9;
+ 800017e:	2309      	movs	r3, #9
  8000180:	627b      	str	r3, [r7, #36]	@ 0x24
-	  int num2 = 22;
- 8000182:	2316      	movs	r3, #22
+	  int num2 = 10;
+ 8000182:	230a      	movs	r3, #10
  8000184:	623b      	str	r3, [r7, #32]
 
 	  sprintf(tx_buff, "%d,%d\r\n", num1, num2);

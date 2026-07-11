@@ -106,8 +106,8 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-	  int num1 = 10;
-	  int num2 = 22;
+	  int num1 = 9;
+	  int num2 = 10;
 
 	  sprintf(tx_buff, "%d,%d\r\n", num1, num2);
 

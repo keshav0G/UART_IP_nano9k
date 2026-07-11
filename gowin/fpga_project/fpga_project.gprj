@@ -7,7 +7,8 @@
     <FileList>
         <File path="src/baud_rate_gen.v" type="file.verilog" enable="1"/>
         <File path="src/top_echo.v" type="file.verilog" enable="0"/>
-        <File path="src/top_stm_add.v" type="file.verilog" enable="1"/>
+        <File path="src/top_stm_add.v" type="file.verilog" enable="0"/>
+        <File path="src/top_stm_add_led.v" type="file.verilog" enable="1"/>
         <File path="src/uart_rx.v" type="file.verilog" enable="1"/>
         <File path="src/uart_top.v" type="file.verilog" enable="0"/>
         <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
