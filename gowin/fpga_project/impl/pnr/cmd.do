@@ -3,6 +3,7 @@
 -pn GW1NR-LV9QN88PC6/I5
 -cst D:\code\verilog\uart\gowin\fpga_project\src\fpga_project.cst
 -cfg D:\code\verilog\uart\gowin\fpga_project\impl\pnr\device.cfg
+-sdc D:\code\verilog\uart\gowin\fpga_project\src\fpga_project.sdc
 -bit
 -tr
 -ph
