@@ -130,6 +130,75 @@ Incoming ASCII characters are converted into binary integers before being proces
 
 ---
 
+
+# Simulation & Verification
+
+Before hardware implementation, the UART IP was functionally verified using **Icarus Verilog** on **EDA Playground**, with waveforms analyzed using **EPWave**.
+
+The simulation environment was used to validate the RTL behavior, verify UART frame timing, and debug state-machine operation prior to FPGA synthesis.
+
+---
+
+## Simulation Environment
+
+| Tool | Purpose |
+|------|---------|
+| EDA Playground | Online RTL simulation environment |
+| Icarus Verilog | Verilog compiler and simulator |
+| EPWave | Waveform visualization and debugging |
+
+---
+
+## Functional Verification
+
+The following functionality was verified through simulation:
+
+- Baud-rate generator timing
+- UART transmitter (8-N-1 frame generation)
+- UART receiver operation
+- Start and stop bit detection
+- Serial-to-parallel data reconstruction
+- Byte-valid and transmission-complete signaling
+- FSM state transitions
+- End-to-end UART communication
+
+---
+
+## Waveform Verification
+
+Simulation waveforms were analyzed using **EPWave** to verify:
+
+- Correct UART frame format (8-N-1)
+- Transmit and receive timing
+- Baud clock enable generation
+- Receiver sampling and byte reconstruction
+- State machine progression
+- Valid data reception (`0x55`, `0xAA`, `0x41`) and control signals
+
+<p align="center">
+<img src="docs/simulation waveform.png" width="950">
+</p>
+
+*EPWave timing diagram showing successful UART transmission and reception, including FSM state transitions, baud clock enables, serial data, and reconstructed bytes.*
+
+---
+
+## Running the Simulation
+
+The RTL can be simulated locally using **Icarus Verilog** or directly in **EDA Playground**.
+
+```bash
+iverilog -o uart_tb rtl/*.v testbench/uart_tb.v
+vvp uart_tb
+gtkwave dump.vcd
+```
+
+The repository includes reusable testbenches under:
+
+```
+testbench/
+```
+
 # Hardware Demonstration
 
 The STM32 periodically transmits packets to the FPGA.
